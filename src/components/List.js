@@ -3,15 +3,16 @@ import { Button, Modal } from "react-bootstrap";
 
 import classes from "./List.module.css";
 
-const List = () => {
+const List = (props) => {
   const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-
   const [todo, setTodo] = useState([]);
+  const handleClose = () => setShow(false);
+  const userName = props.name;
 
+  // Getting todos from database
   async function handleShow() {
     const req = await fetch(
-      "https://react-http-63a8f-default-rtdb.firebaseio.com/todo.json"
+      `https://react-http-63a8f-default-rtdb.firebaseio.com/${userName}.json`
     );
     const data = await req.json();
 

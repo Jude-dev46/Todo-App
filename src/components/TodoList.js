@@ -3,21 +3,17 @@ import ListItem from "./ListItem";
 import Card from "./UI/Card";
 
 const TodoList = ({ todos }) => {
-  console.log(todos);
   const [todo, setTodo] = useState(todos);
 
   useEffect(() => {
     setTodo(todos);
   }, [todos]);
 
-  console.log(todo);
-
   const removeTodoHandler = (id) => {
     const removeItem = todo.filter((todo) => {
       return todo.id !== id;
     });
     setTodo(removeItem);
-    console.log(todo);
 
     // const index = todo.findIndex((todo) => todo.id !== id);
     // if (index !== -1) {

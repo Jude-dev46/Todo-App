@@ -60,7 +60,6 @@ const Input = (props) => {
         .replace(" PM", "");
 
       if (timeString === reminder) {
-        console.log("Reminder");
         setIsPlaying(true);
         audio.play();
       } else {
