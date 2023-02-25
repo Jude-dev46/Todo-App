@@ -69,6 +69,7 @@ const Input = (props) => {
     }, 1000);
 
     return () => clearInterval(intervalId);
+    // eslint-disable-next-line
   }, [reminder]);
 
   return (
