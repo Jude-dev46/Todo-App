@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.header button {
+  background-color: teal;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 320px) {
+  .header {
+    width: 320px;
+  }
+  .header h1 {
+    width: 320px;
+  }
+}
