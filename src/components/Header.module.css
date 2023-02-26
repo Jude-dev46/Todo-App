@@ -12,6 +12,16 @@
   cursor: pointer;
 }
 
+@media (max-width: 425px) {
+  .header {
+    width: 280px;
+    padding-left: 2rem;
+  }
+  .header h1 {
+    width: 350px;
+  }
+}
+
 @media (max-width: 320px) {
   .header {
     width: 320px;

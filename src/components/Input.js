@@ -41,8 +41,8 @@ const Input = (props) => {
 
     setReminder(inputs.enteredTime);
 
-    if (isPlaying) {
-      setIsPlaying(false);
+    if (!isPlaying) {
+      audio.pause();
     }
   };
 

@@ -1,4 +1,12 @@
+.input {
+  width: 450px;
+  border-radius: 5px;
+}
+
 @media (max-width: 425px) {
+  .header {
+    width: 425px;
+  }
   .input {
     width: 95%;
     border-radius: 5px;
@@ -8,6 +16,7 @@
 @media (max-width: 375px) {
   .header {
     width: 375px;
+    padding-right: 2rem;
   }
   .input {
     width: 300px;

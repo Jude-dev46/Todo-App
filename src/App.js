@@ -19,6 +19,10 @@ function App() {
     const name = nameRef.current.value;
     setUserName(name);
     setShow(false);
+
+    if (userName === "") {
+      setShow(true);
+    }
   };
 
   // Adding new todos
@@ -60,7 +64,7 @@ function App() {
         <Modal.Body>
           <input
             type="text"
-            placeholder="Enter your name"
+            placeholder="Enter your first name"
             className="input"
             ref={nameRef}
           />
