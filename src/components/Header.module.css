@@ -24,8 +24,8 @@
 
 @media (max-width: 375px) {
   .header {
-    width: 257px;
-    padding-left: 2rem;
+    width: 245px;
+    padding-left: 0rem;
   }
   .header h1 {
     font-size: 24px;
