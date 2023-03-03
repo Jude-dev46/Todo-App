@@ -19,14 +19,13 @@
     padding-right: 2rem;
   }
   .input {
-    width: 300px;
+    width: 275px;
     border-radius: 5px;
   }
 }
 
 @media (max-width: 320px) {
   .header {
-    display: flex;
-    width: 320px;
+    width: 100%;
   }
 }

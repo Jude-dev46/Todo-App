@@ -34,7 +34,7 @@ const List = (props) => {
 
   return (
     <div className={classes.list}>
-      <Button variant="primary" onClick={handleShow}>
+      <Button variant="primary" onClick={handleShow} style={{ width: "100px" }}>
         Get todos
       </Button>
       <Modal

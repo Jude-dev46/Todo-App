@@ -57,7 +57,12 @@ function App() {
 
   return (
     <div>
-      <Modal show={show} onHide={handleClose} backdrop="static">
+      <Modal
+        show={show}
+        onHide={handleClose}
+        backdrop="static"
+        className="modal"
+      >
         <Modal.Header>
           <Modal.Title>Enter your name:</Modal.Title>
         </Modal.Header>
